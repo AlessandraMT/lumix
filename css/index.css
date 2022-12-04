@@ -1,0 +1,373 @@
+/* banner */
+
+#banner {
+    height: 100vh;
+    background-color: #758892;
+    background-image: linear-gradient(0deg, #758892 0%, #002732 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner h1:only-of-type {
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Bodoni', serif;
+    text-shadow: 5px 5px 5px rgb(163, 157, 157);
+}
+
+#banner p:only-of-type {
+    color: #ebe5d5;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+#hubble {
+    background: url("../imagenes/inicio/hubble.jpg") no-repeat;
+    background-size: cover;
+}
+
+#actividad-solar {
+    background: url("../imagenes/inicio/sol.jpg") no-repeat;
+    background-size: cover;
+}
+
+#cielo-ahora {
+    background: url("../imagenes/inicio/cielo.jpg") no-repeat;
+    background-size: cover;
+}
+
+#hubble-mira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#hubble-mira a {
+    color: #002732;
+}
+
+#hubble-mira>#hubble-external {
+    display: flex;
+}
+
+#mas-noticias {
+    margin: 0 auto;
+    background-color: #002732;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* seccion-eventos */
+
+#hoy {
+    background: url("../imagenes/eventos/hoy.jpg") no-repeat center;
+    background-size: cover;
+
+}
+
+#diciembre {
+    background: url("../imagenes/eventos/diciembre.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+#verano {
+    background: url("../imagenes/eventos/verano.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+#eclipse {
+    background: url("../imagenes/eventos/eclipse.jpg") no-repeat;
+    background-size: cover;
+}
+
+#scheat {
+    background: url("../imagenes/eventos/scheat.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+/* seccion-noticias */
+
+#nebulosa {
+    background: url("../imagenes/noticias/Nebulosa.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#llamarada {
+    background: url("../imagenes/noticias/Llamarada solar.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#telescopio {
+    background: url("../imagenes/noticias/Telescopio.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#calendario {
+    background: url("../imagenes/noticias/calendario.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#posicion {
+    background: url("../imagenes/noticias/PosicionISS.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#camara {
+    background: url("../imagenes/noticias/Camara.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* seccion-planetas */
+
+#venus {
+    background: url("../imagenes/planetas/venus.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#mercurio {
+    background: url("../imagenes/planetas/mercurio.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#marte {
+    background: url("../imagenes/planetas/marte.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#urano {
+    background: url("../imagenes/planetas/urano.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#tierra {
+    background: url("../imagenes/planetas/tierra.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#saturno {
+    background: url("../imagenes/planetas/saturno.jpg") no-repeat;
+    background-size: cover;
+}
+
+#jupiter {
+    background: url("../imagenes/planetas/jupiter.jpg") no-repeat;
+    background-size: cover;
+}
+
+#neptuno {
+    background: url("../imagenes/planetas/neptuno.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* seccion-contacto */
+
+#seccion-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+#formulario {
+    width: 30vw;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    position: relative
+}
+
+#formulario h2:only-of-type {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #002732;
+    border-bottom: 3px solid #525261
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+input:focus {
+    border-bottom: 2px solid #62626e6b
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #78788c;
+    color: #fff
+}
+
+#formulario div {
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #002732;
+    color: #fff;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px rgb(138, 134, 134)
+}
+
+span {
+    margin: 0 5px 0 15px
+}
+
+/* Comunes a mas de una sección*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header>nav>ul>li>a {
+    flex: 1;
+}
+
+.contenedor-fotos {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-fotos picture {
+    width: 25%;
+    max-height: 30%;
+    min-width: 50vh;
+    max-width: 50vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    margin: 1rem;
+    border-radius: 5%;
+}
+
+.contenedor-fotos img {
+    max-width: 50vh;
+}
+
+picture div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(39, 37, 37, 0.534);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+iframe {
+    width: 80%;
+    height: 500px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contenedor-iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedor-iframe h1:only-of-type {
+    text-align: center;
+}
+
+/* Footer*/
+footer {
+    color: white;
+    margin-top: 1rem;
+    background-color: #002732;
+    padding: 2rem;
+
+}
+
+#cajas-footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#redes {
+    color: white;
+}
+
+#boton-facebook {
+    font-size: 2rem;
+}
+
+#boton-instagram {
+    font-size: 2rem;
+}
+
+#boton-twitter {
+    font-size: 2rem;
+}
+
+#boton-whatsapp {
+    font-size: 2rem;
+}
+
+#copyright {
+    text-align: center;
+}
